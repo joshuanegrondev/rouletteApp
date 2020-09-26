@@ -1,0 +1,87 @@
+body{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+  color: white;
+}
+a{
+  text-decoration: none;
+}
+img{
+  height: 200px;
+}
+
+.jumbotron{
+  color: red;
+  background-color: black;
+}
+.container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.gameContainer{
+  display:flex;
+  width: 70%;
+  height: 70%;
+  flex-direction: column;
+  position: relative;
+}
+.gameContainer p{
+  width: 100%;
+  text-align: center;
+}
+.game{
+  width: 48%;
+  height:65%;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin-left:26.5%;
+}
+.game>img{
+  width:100%;
+  height: 100%;
+  display: block;
+}
+.inputContainer{
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.dataContainer{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dataContainer p{
+  font-size: 50px;
+}
+#rangeNumber{
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.number{
+  margin-bottom: 1rem;
+}
+.bet{
+  margin-top: .75rem;
+}
+.game{
+  margin-top: 1rem;
+}

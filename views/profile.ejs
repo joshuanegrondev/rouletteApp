@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <title>Gametime</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<section class="container">
+  <h1>Casino, test your luck</h1>
+  <section> <!-- if the user exists, then they will start with their current balance -->
+    <% if(roulette[0].userId) {%>
+      <p>Current Balance: $<span class="amount"><%= roulette[0].balance %> </span></p>
+    <% } else { %>
+      <p>Current Balance: $<span class="amount">750</span></p>
+      <% } %>
+  </section>
+
+
+
+
+    <!-- <img src="img/savage21.jpg" alt="21 Savage Profile Photo"> -->
+    <section class="gameContainer">
+      <p>Pick a color & bet any number between 1 & 1250... Winners bets are paid out 35 to 1.</p>
+      <section class="game">
+        <img src="img/roulette.png" alt="table, 1-35" class="">
+      </section>
+
+      <section class="inputContainer">
+        <p id="rangeNumber"></p>
+        <input type="range" name="choice" id="" class="number" min="0" max="36">
+
+        <input type="text" placeholder="1 - 1250" class="betInput" id="<%= user._id %>" >
+        <button type="button" name="button" id="<%= user.local.email %>" class="bet">Bet</button>
+      </section>
+    </section>
+</section>
+<script type="text/javascript" src="main.js">
+
+</script>
+</body>
+</html>
